@@ -11,7 +11,6 @@ if __name__ == '__main__':
     import time
     import sqlite3
     import smtplib
-    #from threading import Thread
 
     OUT_C = 11
     OUT_H = 12
@@ -365,7 +364,7 @@ if __name__ == '__main__':
         if date_now != time.strftime('%d'):
             date_now = time.strftime('%d')
             update_value_day()
-            post_mail()
+            #post_mail()
             
         time.sleep(.01)
 
